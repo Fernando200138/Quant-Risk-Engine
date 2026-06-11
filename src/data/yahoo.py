@@ -7,7 +7,7 @@ from pathlib import Path
 
 class YahooDownloader:
 
-    def __init__(self, data_dir="data/raw"):
+    def __init__(self, data_dir="src/data/raw"):
         self.data_dir = Path(data_dir)
         self.data_dir.mkdir(parents=True, exist_ok=True)
 

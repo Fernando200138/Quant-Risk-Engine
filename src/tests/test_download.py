@@ -3,12 +3,12 @@ import sys
 import os
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
 
-from risk_engine.data.yahoo import YahooDownloader
-from risk_engine.features.returns import compute_returns
+from src.data.yahoo import YahooDownloader
+from src.features.returns import compute_returns
 
 downloader = YahooDownloader()
 
-df = downloader.download_prices("AAPL")
+df = downloader.download_and_save("JPM")
 
 df = compute_returns(df)
 
