@@ -256,8 +256,18 @@ def simulate_correlated_GBM(
         years:int,
         steps_per_year:int,
 )->np.ndarray:
+    """
+    It does Monte Carlo simulations to estimate the future
+    prices of the assets we are working with. 
+
+    corr_matrix: Estimates the historical correlation between
+    the assets we are working with. 
+    
+    returns: Dataframe with historical log_returns.
+    """
     L=np.linalg.cholesky(corr_matrix)
     S0 = prices.iloc[-1].to_numpy()
+    #print(f"S0:{S0}")
     n_steps=years * steps_per_year
     mu = (returns.mean() * 252).to_numpy()
     sigma = (returns.std() * np.sqrt(252)).to_numpy()
