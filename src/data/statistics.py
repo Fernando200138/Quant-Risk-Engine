@@ -19,8 +19,10 @@ def compute_log_returns(prices: pd.DataFrame) -> pd.DataFrame:
     pd.DataFrame
         Log returns.
     """
-    return np.log(prices / prices.shift(1)).dropna()
+    prices = prices.sort_index()
 
+    # Does not drop an entire date because one ticker is missing
+    return np.log(prices / prices.shift(1))
 
 def annualized_return(log_returns: pd.DataFrame,
                       trading_days: int = 252) -> pd.Series:

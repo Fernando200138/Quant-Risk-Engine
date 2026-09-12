@@ -1,0 +1,12 @@
+[
+    "NVDA", "AAPL", "MSFT", "AMZN", "GOOGL", "GOOG", "AVGO", "META", "TSLA", "MU",
+    "BRK-B", "LLY", "JPM", "WMT", "AMD", "V", "XOM", "JNJ", "INTC", "MA",
+    "ORCL", "ABBV", "BAC", "CSCO", "CVX", "PLTR", "LRCX", "COST", "KO", "CAT",
+    "AMAT", "MRK", "UNH", "GE", "DELL", "MS", "PG", "NFLX", "HD", "GS",
+    "PM", "PANW", "RTX", "WFC", "GEV", "SNDK", "KLAC", "ANET", "TXN", "C",
+    "TMO", "AXP", "IBM", "LIN", "CRWD", "AMGN", "VZ", "STX", "CRM", "APH",
+    "MRVL", "TMUS", "PEP", "QCOM", "SCHW", "DE", "ABT", "GILD", "MCD", "DIS",
+    "ADI", "T", "NEE", "UNP", "WDC", "WELL", "BLK", "BA", "ETN", "COP",
+    "PFE", "UBER", "DHR", "GLW", "TJX", "NOW", "BKNG", "NEM", "VRTX", "BMY",
+    "COF", "PLD", "CB", "SPGI", "PGR", "ISRG", "LMT", "CVS", "PH", "MDT",
+]
