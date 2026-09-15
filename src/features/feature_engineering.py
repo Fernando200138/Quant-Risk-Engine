@@ -21,7 +21,7 @@ df = df.sort_values(["ticker", "date"])
 
 
 # ============================================================
-# 3. Return features
+# 2. Return features
 # ============================================================
 
 # Cumulative log returns over different horizons
@@ -42,7 +42,7 @@ df["return_20d"] = (
 
 
 # ============================================================
-# 4. Volatility features
+# 3. Volatility features
 # ============================================================
 
 df["volatility_5d"] = (
@@ -67,7 +67,7 @@ df["volatility_60d"] = (
 
 
 # ============================================================
-# 5. Save feature dataset
+# 4. Save feature dataset
 # ============================================================
 
 df.to_csv(data_dir / "features.csv", index=False)
